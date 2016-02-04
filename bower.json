@@ -1,0 +1,21 @@
+{
+  "name": "item-selector",
+  "authors": [
+    "Sandro Kock <sandro.kock@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "iron-selector": "PolymerElements/iron-selector#~1.2.0"
+  }
+}

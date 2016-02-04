@@ -1,0 +1,42 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+<link rel="import" href="bower_components/iron-selector/iron-selector.html">
+
+<!-- -->
+<dom-module id="demo-element">
+  <template>
+    <style>
+      :host {
+        box-sizing: border-box;
+      }
+      .iron-selected {
+        background: #CCC;
+      }
+    </style>
+
+    <iron-selector selected-item="{{selectedItem}}" se selected="0">
+      <div>Item 1</div>
+      <div>Item 2</div>
+      <div>Item 3</div>
+    </iron-selector>
+
+
+  </template>
+
+  <script>
+    Polymer({
+      is: 'demo-element',
+
+      properties: {
+        selectedItem: {
+          type: Object,
+          observer: "_selectedItemChanged"
+        }
+      },
+
+      _selectedItemChanged: function(selectedItem, old){
+        console.log("selectedItemChanged", arguments);
+      }
+
+    });
+  </script>
+</dom-module>
